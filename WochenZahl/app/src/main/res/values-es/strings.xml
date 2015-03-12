@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Info de Semana</string>
+    <string name="befinden_uns_in">Es la</string>
+    <string name="ungerade">impar</string>
+    <string name="made_by">hecha por Julian Zimmerlin</string>
+    <string name="aktualisieren">Actualizar</string>
+    <string name="woche">semana</string>
+    <string name="gerade">par</string>
+</resources>

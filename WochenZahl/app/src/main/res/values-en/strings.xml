@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Week-Info</string>
+    <string name="befinden_uns_in">It is the</string>
+    <string name="ungerade">odd</string>
+    <string name="made_by">made by Julian Zimmerlin</string>
+    <string name="aktualisieren">Refresh</string>
+    <string name="woche">week</string>
+    <string name="gerade">even</string>
+</resources>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:background="#02ade5"
+    android:clickable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21.02.2015"
+        android:id="@+id/textView3"
+        android:textColor="#ffffffff"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/befinden_uns_in"
+        android:id="@+id/textView"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="#ffffffff"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView android:id="@+id/blabla"
+        android:text="21. Woche."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="55sp"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ungerade"
+        android:id="@+id/textView2"
+        android:textSize="25sp"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/blabla"
+        android:layout_centerHorizontal="true" />
+
+    <DigitalClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:textSize="60sp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="@string/made_by"
+        android:id="@+id/textView5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff" />
+</RelativeLayout>

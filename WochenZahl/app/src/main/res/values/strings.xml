@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wochen-Info</string>
+    <string name="befinden_uns_in">Wir befinden uns in der</string>
+    <string name="ungerade">ungerade</string>
+    <string name="made_by">made by Julian Zimmerlin</string>
+    <string name="aktualisieren">Aktualisieren</string>
+    <string name="woche">Woche</string>
+    <string name="gerade">gerade</string>
+</resources>
