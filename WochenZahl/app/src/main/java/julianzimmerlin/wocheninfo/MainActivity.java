@@ -1,9 +1,8 @@
 package julianzimmerlin.wocheninfo;
 
-import android.graphics.Color;
+import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -15,14 +14,13 @@ import java.util.Random;
 
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     TextView woche;
     TextView datum;
     TextView parity;
     TextView text;
     View bg;
-    Calendar c;
     MediaPlayer mp;
     Random rand;
 
@@ -35,37 +33,21 @@ public class MainActivity extends ActionBarActivity {
         parity = (TextView) findViewById(R.id.textView2);
         text = (TextView) findViewById(R.id.textView);
         bg = findViewById(R.id.layout);
-        c = Calendar.getInstance();
         rand = new Random();
         //mp = MediaPlayer.create(this, R.raw.sample);
+
+        setDates();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        int a = rand.nextInt(4);
-        switch (a) {
-            case 0:
-                bg.setBackgroundColor(Color.rgb(39, 176, 245));
-                break;
-            case 1:
-                bg.setBackgroundColor(Color.rgb(207, 37, 187));
-                break;
-            case 2:
-                bg.setBackgroundColor(Color.rgb(214, 211, 0));
-                break;
-            case 3:
-                bg.setBackgroundColor(Color.rgb(224, 83, 27));
-                break;
-            case 4:
-                bg.setBackgroundColor(Color.rgb(25, 224, 178));
-                break;
-            default:
-                //bg.setBackgroundColor(Color.rgb(214, 211, 0));
-        }
+        setBackground();
+    }
 
-        c = Calendar.getInstance();
+    private void setDates() {
+        Calendar c = Calendar.getInstance();
         int wochenzahl = c.get(Calendar.WEEK_OF_YEAR);
         String sprache = Locale.getDefault().getLanguage();
         String ordinal = "";
@@ -91,5 +73,28 @@ public class MainActivity extends ActionBarActivity {
 
         DateFormat df2 = new SimpleDateFormat("dd.MM.yyyy");
         datum.setText(df2.format(c.getTime()));
+    }
+
+    private void setBackground() {
+        int a = rand.nextInt(4);
+        switch (a) {
+            case 0:
+                bg.setBackgroundResource(R.color.blue);
+                break;
+            case 1:
+                bg.setBackgroundResource(R.color.cyan);
+                break;
+            case 2:
+                bg.setBackgroundResource(R.color.red);
+                break;
+            case 3:
+                bg.setBackgroundResource(R.color.yellow);
+                break;
+            case 4:
+                bg.setBackgroundResource(R.color.purple);
+                break;
+            default:
+                //bg.setBackgroundResource(R.color.blue);
+        }
     }
 }
