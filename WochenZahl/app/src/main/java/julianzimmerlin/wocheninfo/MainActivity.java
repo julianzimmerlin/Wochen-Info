@@ -76,7 +76,7 @@ public class MainActivity extends Activity {
     }
 
     private void setBackground() {
-        int a = rand.nextInt(4);
+        int a = rand.nextInt(5);
         switch (a) {
             case 0:
                 bg.setBackgroundResource(R.color.blue);
